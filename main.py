@@ -18,6 +18,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 @app.get("/omikuji")
 def omikuji():
     omikuji_list = [
+        "めっちゃ大吉"
         "大吉",
         "中吉",
         "小吉",
@@ -30,4 +31,4 @@ def omikuji():
         "大凶"
     ]
 
-    return omikuji_list[random.randrange(10)]
+    return omikuji_list[random.randrange(11)]
