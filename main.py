@@ -39,7 +39,6 @@ def omikuji():
 @app.get("/index")
 def index():
     html_content = """
-    <link rel="stylesheet" href="style.css">
     <html>
         <head>
             <title>これはカウントサイトです</title>
@@ -49,8 +48,8 @@ def index():
        <div class="counter">
        <div class="count">0</div>
        <button id="decrement">減らす</button>
-       <button id="increment">増やす</button>
-       </div>
+	<button id="increment">増やす</button>
+</div>
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
