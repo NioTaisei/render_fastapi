@@ -41,11 +41,14 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>ああああああああああああああ</title>
+            <title>これはカウントサイトです</title>
         </head>
-        <body>
-            <h1>あああああああああああああ！</h1>
-        </body>
+       <meta charset="utf-8">
+       <script src="myStyle.js"></script>
+       <div id="click_html"></div>
+       <button onclick="a()">+1</button><br>
+       <button onclick="b()">-1</button><br>
+       <button onclick="c()">リセット</button>
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
